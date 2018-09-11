@@ -1,0 +1,56 @@
+.subscription .newsletter-btn:hover,
+.single-member .thumb .overlay-member .line,
+.single-filter-content .overlay-bg-content .line,
+.single-product:hover,
+.details-btn:hover,
+.primary-btn:hover,
+.default-header nav .main-menu .nav-item.submenu ul .nav-item:hover .nav-link,
+.block2-img span.onsale,
+.woocommerce span.onsale,
+.swal-button:active,
+.swal-button,
+.arrow-slick1:hover,
+.select2-container .select2-results__option--highlighted[aria-selected],
+.select2-container .select2-results__option[aria-selected="true"],
+[data-loader='ball-scale'],
+.hov1:hover,
+.eff2:active,
+.effect1-line,
+.bg0-hov:hover,
+.bg0 {
+    background-color: #00ff8c;
+}
+
+.footer-bottom .footer-text a:hover,
+.subscription .info.valid,
+footer .footer-nav li a:hover,
+.active-testimonial-carousel .single-testimonial .author h6 a:hover,
+.single-pricing-table .top .package .price,
+.single-pricing-table .top .head span ,
+.single-member .desc h5 a:hover,
+.single-member .thumb .overlay-member .social a:hover,
+.controls .filter.active ,
+.controls .filter:hover,
+.single-product .icon .fa,
+.footer-social a:hover,
+.header-social a:hover,
+.default-header nav .main-menu a:hover,
+.logo h2 a,
+.list:hover .progressBar-percentage,
+.block2-btn-towishlist .icon_heart,
+.color0,
+.color0-hov:hover,
+.m-text8 {
+    color: #00ff8c;
+}
+
+.subscription .newsletter-btn,
+.single-product,
+.details-btn,
+.primary-btn,
+.tag-item:hover{
+    border-color: #00ff8c;
+}
+.list:hover .progressBar-circle {
+    stroke: #00ff8c
+}
