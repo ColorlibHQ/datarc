@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Datarc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-05 04:59+0000\n"
+"POT-Creation-Date: 2018-10-08 06:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -18,32 +18,19 @@ msgstr ""
 msgid " Comments"
 msgstr ""
 
-#: inc/welcome-screen/class-datarc.php:119
-msgid " is social :"
+#: inc/libraries/class-epsilon-dashboard-setup.php:148
+msgid ""
+" This wizard will set up your theme, install plugins and import demo content."
+" It is optional & should take less than a minute."
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:280
-msgid " Sticky Header Nav Bar Menu Hover Color"
-msgstr ""
-
-#: inc/hooks/hooks-functions.php:251
+#: inc/hooks/hooks-functions.php:240
 msgid "% Comments"
 msgstr ""
 
 #: inc/support-functions.php:80
 #, php-format
 msgid "%1$s at %2$s"
-msgstr ""
-
-#. Welcome Screen Description.
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:433
-#, php-format
-msgid ""
-"%1$s is now installed and ready to use! Get ready to build something "
-"beautiful. We hope you enjoy it! We want to make sure you have the best "
-"experience using %1$s and that is why we gathered here all the necessary "
-"information for you. We hope you will enjoy using %1$s, as much as we enjoy "
-"creating great products."
 msgstr ""
 
 #: inc/wp_bootstrap_pagination.php:21
@@ -54,45 +41,40 @@ msgstr ""
 msgid "&raquo;"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:399
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-color-picker.php:82
-msgid "(clear)"
-msgstr ""
-
 #: inc/support-functions.php:80
 msgid "(Edit)"
 msgstr ""
 
-#: inc/hooks/hooks-functions.php:251
+#: inc/hooks/hooks-functions.php:240
 msgid "0 Comment"
 msgstr ""
 
-#: inc/datarc-functions.php:86 inc/hooks/hooks-functions.php:251
+#: inc/datarc-functions.php:86 inc/hooks/hooks-functions.php:240
 msgid "1 Comment"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:470
+#: inc/customizer/fields/sections.php:79
+msgid "404 Page"
+msgstr ""
+
+#: inc/customizer/fields/fields.php:239
 msgid "404 Page Background Color"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:376
-msgid "404 Page Settings"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:432
-msgid "404 Page Text #1 Color"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:451
-msgid "404 Page Text #2 Color"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:396
+#: inc/customizer/fields/fields.php:197
 msgid "404 Text #1"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:413
+#: inc/customizer/fields/fields.php:219
+msgid "404 Text #1 Color"
+msgstr ""
+
+#: inc/customizer/fields/fields.php:208
 msgid "404 Text #2"
+msgstr ""
+
+#: inc/customizer/fields/fields.php:229
+msgid "404 Text #2 Color"
 msgstr ""
 
 #: inc/support-functions.php:78
@@ -100,81 +82,49 @@ msgstr ""
 msgid "<span class=\"comment-author-name\">%s</span> "
 msgstr ""
 
-#. Menu Title
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:393
-#, php-format
-msgid "About %1$s"
+#: inc/libraries/class-epsilon-dashboard-setup.php:459
+msgid ""
+"<u>We really hope</u> you'll enjoy using our products as much as we've "
+"enjoyed building them."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:283
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:349
-msgid "Activate"
+#: inc/libraries/class-epsilon-dashboard-setup.php:435
+msgid "Actions"
 msgstr ""
 
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:592
-msgid "Activate now"
+#: inc/libraries/class-epsilon-dashboard-setup.php:296
+#: inc/libraries/class-epsilon-dashboard-setup.php:311
+#: inc/libraries/class-epsilon-dashboard-setup.php:326
+#: inc/libraries/class-epsilon-dashboard-setup.php:341
+msgid "Activate Plugin"
 msgstr ""
 
 #. %s is the plugin name
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-notify-system.php:127
+#: inc/libraries/class-epsilon-init-notify-system.php:61
 #, php-format
 msgid "Activate: %s"
 msgstr ""
 
-#: inc/welcome-screen/class-datarc-notify-system.php:186
-msgid "Activate: Contact Form 7"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:130
-msgid "Activate: Datarc Companion Plugin"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:144
-msgid "Activate: Elementor Page Builder Plugin"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:200
-msgid "Activate: One Click Demo Import"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:158
-msgid "Activate: Weglot Translate Plugin"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:172
-msgid "Activate: WooCommerce"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:304
-msgid "Activating"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/class-epsilon-framework.php:260
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-repeater.php:101
-msgid "Add"
+#: inc/libraries/class-epsilon-dashboard-setup.php:223
+msgid "Activation, deactivation and uninstall"
 msgstr ""
 
 #: inc/wp_bootstrap_navwalker.php:204 inc/wp_bootstrap_navwalker.php:408
 msgid "Add a menu"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:359
-msgid "Add a Section"
+#: inc/libraries/class-epsilon-dashboard-setup.php:188
+msgid "Allow & Finish"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:101
-msgid "Add to Menu"
+#: inc/libraries/class-epsilon-dashboard-setup.php:177
+msgid "Almost ready"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:37
-#: inc/datarc-framework/customizer/customizer.php:92
-#: inc/datarc-framework/customizer/customizer.php:380
-#: inc/datarc-framework/customizer/customizer.php:485
-msgid "Allows you to customize settings for Datarc theme."
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:317
-msgid "Allows you to settings for blog post excerpt and sidebar position."
+#: inc/libraries/class-epsilon-dashboard-setup.php:454
+msgid ""
+"And as such, we've made it easy for you - our user, to disable all of our "
+"theme upsells & recommendations."
 msgstr ""
 
 #: templates/404.php:43
@@ -185,99 +135,27 @@ msgstr ""
 msgid "Back to home page"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:334
-msgid "Background color"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:348
-msgid "Background color opacity"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:365
-msgid "Background image"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:438
-msgid "Background parallax"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:380
-msgid "Background position"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:403
-msgid "Background repeat"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:421
-msgid "Background size"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:450
-msgid "Background video"
-msgstr ""
-
-#: templates/header-bottom.php:6
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:788
-#: inc/datarc-framework/customizer/customizer.php:313
+#: templates/header-bottom.php:6 inc/customizer/fields/sections.php:67
 msgid "Blog"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:352
-msgid "Blog Sidebar Layout"
+#: inc/customizer/fields/fields.php:161
+msgid "Blog Layout"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:393
-msgid "Bottom"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:392
-msgid "Bottom Left"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:394
-msgid "Bottom Right"
-msgstr ""
-
-#: inc/hooks/hooks-functions.php:221
+#: inc/hooks/hooks-functions.php:210
 msgid "By "
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:390
-msgid "Center"
-msgstr ""
-
-#: inc/welcome-screen/sections/getting-started.php:19
-msgid "Check recommended actions"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:219
-#: inc/datarc-framework/epsilon-framework/classes/class-epsilon-ajax-controller.php:61
-msgid "Class does not exist"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:369
-msgid "Clear Results"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc.php:62
+#: inc/libraries/class-epsilon-dashboard-setup.php:457
 msgid ""
-"Clicking the button below will import demo data. Before import demo data "
-"please install all recommended plugins."
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:59
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:136
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-doubled.php:56
-msgid "Close"
+"By turning any or all of the toggles below to the <span style=\"color: green;"
+"\">ON</span> position you'll be able\n"
+"\t\tto hide all upsells & recommended plugin discovery sections & actions."
 msgstr ""
 
 #. Author of the theme
 msgid "Colorlib"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:92
-msgid "Colors"
 msgstr ""
 
 #: comments.php:60
@@ -300,24 +178,7 @@ msgid_plural "%1$s Comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/welcome-screen/class-datarc.php:145
-msgid "Contact Form 7"
-msgstr ""
-
-#: inc/welcome-screen/sections/support.php:3
-#: inc/welcome-screen/sections/support.php:7
-msgid "Contact Support"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:428
-msgid "Contain"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:83
-msgid "Content"
-msgstr ""
-
-#: inc/hooks/hooks-functions.php:274
+#: inc/hooks/hooks-functions.php:263
 msgid "Continue Reading"
 msgstr ""
 
@@ -326,51 +187,27 @@ msgstr ""
 msgid "Copyright &copy; %s  |  All rights reserved to"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:427
-msgid "Cover"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/class-epsilon-customizer.php:479
-msgid "Customize"
+#: inc/libraries/class-epsilon-dashboard-setup.php:222
+msgid "CURRENT PLUGIN EVENTS"
 msgstr ""
 
 #. Name of the theme
 msgid "Datarc"
 msgstr ""
 
-#: inc/welcome-screen/class-datarc.php:143
-msgid "Datarc Companion"
+#: inc/libraries/class-epsilon-dashboard-setup.php:164
+msgid ""
+"Datarc integrates tightly with a few plugins that we recommend installing to "
+"get the full theme experience, as we've intended it to be. This is an "
+"optional step, but we recommend installing them as we think these hand-"
+"picked plugins work really nice with Datarc and help enhance the overall "
+"experience."
 msgstr ""
 
 #. Description of the theme
 msgid ""
 "Datarc is a modern masonry blog WordPress Theme. Its stylish design and "
 "beautiful"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:291
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:357
-msgid "Deactivate"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:598
-msgid "Deactivate now"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:122
-msgid "Default"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc.php:173
-msgid "Demo Content"
-msgstr ""
-
-#: inc/welcome-screen/sections/support.php:12
-msgid "Documentation"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-layouts.php:201
-msgid "Edit column size"
 msgstr ""
 
 #: templates/404.php:34
@@ -381,42 +218,30 @@ msgstr ""
 msgid "Error 404"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:28
+#: inc/libraries/class-epsilon-dashboard-setup.php:411
 msgid ""
-"Even if you're a long-time WordPress user, we still believe you should give "
+"Even if you are a long-time WordPress user, we still believe you should give "
 "our documentation a very quick Read."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:114
-msgid "Facebook"
+#: inc/libraries/class-epsilon-dashboard-setup.php:184
+msgid "Finished"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-typography.php:305
-msgid "Font Size"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:481
+#: inc/customizer/fields/sections.php:90
 msgid "Footer"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:645
-msgid "Footer Anchor Color"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:665
-msgid "Footer Anchor Hover Color"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:585
+#: inc/customizer/fields/fields.php:286
 msgid "Footer Background Color"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:685
+#: inc/customizer/fields/fields.php:336
 msgid "Footer Border Color"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:560
-msgid "Footer Copy Right Text"
+#: inc/customizer/fields/fields.php:276
+msgid "Footer copyright text"
 msgstr ""
 
 #: inc/datarc-widgets-reg.php:63
@@ -427,11 +252,11 @@ msgstr ""
 msgid "Footer One"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:535
+#: inc/customizer/fields/fields.php:265
 msgid "Footer Social Show/Hide"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:605
+#: inc/customizer/fields/fields.php:296
 msgid "Footer Text Color"
 msgstr ""
 
@@ -443,109 +268,92 @@ msgstr ""
 msgid "Footer Two"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:506
-msgid "Footer Widget On/Off"
+#: inc/customizer/fields/fields.php:316
+msgid "Footer Widget Anchor Color"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:625
+#: inc/customizer/fields/fields.php:326
+msgid "Footer Widget Anchor Hover Color"
+msgstr ""
+
+#: inc/customizer/fields/fields.php:254
+msgid "Footer widget show/hide"
+msgstr ""
+
+#: inc/customizer/fields/fields.php:306
 msgid "Footer Widget Title Color"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:45
-msgid "Front Page Sections"
-msgstr ""
-
-#: inc/welcome-screen/sections/getting-started.php:30
+#: inc/libraries/class-epsilon-dashboard-setup.php:412
 msgid "Full documentation"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:33
+#: inc/customizer/fields/sections.php:45
 msgid "General"
 msgstr ""
 
 #. Notice URL
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:374
+#: inc/libraries/class-epsilon-dashboard-setup.php:100
 #, php-format
 msgid "Get started with %1$s"
 msgstr ""
 
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:502
+#: inc/libraries/class-epsilon-dashboard-setup.php:151
+#: inc/libraries/class-epsilon-dashboard-setup.php:400
 msgid "Getting Started"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:37
+#: inc/libraries/class-epsilon-dashboard-setup.php:417
 msgid "Go to Customizer"
 msgstr ""
 
-#: inc/welcome-screen/class-datarc.php:154
-msgid "Go To Import Demo Content"
-msgstr ""
-
-#: inc/classes/Class-Config.php:205
+#: inc/classes/Class-Config.php:222
 msgctxt "Google font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:303
+#: inc/customizer/fields/fields.php:134
 msgid "Header Background Color"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:88
+#: inc/customizer/fields/sections.php:56
 msgid "Header Nav Bar"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:170
+#: inc/customizer/fields/fields.php:73
 msgid "Header Nav Bar Background Color"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:214
+#: inc/customizer/fields/fields.php:93
 msgid "Header Nav Bar Menu Color"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:236
+#: inc/customizer/fields/fields.php:104
 msgid "Header Nav Bar Menu Hover Color"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:146
+#: inc/customizer/fields/fields.php:62
 msgid "Header Search Option Show/Hide"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:117
+#: inc/customizer/fields/fields.php:51
 msgid "Header Social Show/Hide"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:192
+#: inc/customizer/fields/fields.php:83
 msgid "Header Sticky Nav Bar Background Color"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:294
-msgid "Heading Color"
+#: inc/libraries/class-epsilon-dashboard-setup.php:467
+msgid "Hide Customizer Recommended Actions"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-image-dimensions.php:92
-msgid "Height"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-doubled.php:64
-msgid "Help"
+#: inc/libraries/class-epsilon-dashboard-setup.php:474
+msgid "Hide Customizer Recommended Plugins"
 msgstr ""
 
 #: inc/datarc-breadcrumbs.php:27 inc/datarc-breadcrumbs.php:51
 msgid "Home"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:775
-msgid "Homepage"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:302
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:306
-#: inc/welcome-screen/sections/recommended-actions.php:88
-msgid "Hooray! There are no required actions for you right now."
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:503
-msgid "Horizontal alignment"
 msgstr ""
 
 #. Author URI of the theme
@@ -560,70 +368,25 @@ msgstr ""
 msgid "ICON"
 msgstr ""
 
-#: inc/welcome-screen/class-datarc.php:61
-#: inc/welcome-screen/class-datarc.php:152
-msgid "Import Demo Content"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc.php:139
-msgid "Import HomePage Widgets"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:429
-msgid "Initial"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:77
+#: inc/customizer/fields/fields.php:34
 msgid "Instagram Access Token"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:279
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:345
-msgid "Install"
+#: inc/libraries/class-epsilon-dashboard-setup.php:296
+#: inc/libraries/class-epsilon-dashboard-setup.php:311
+#: inc/libraries/class-epsilon-dashboard-setup.php:326
+#: inc/libraries/class-epsilon-dashboard-setup.php:341
+msgid "Install Plugin"
 msgstr ""
 
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:571
-msgid "Install and Activate"
+#: inc/libraries/class-epsilon-dashboard-setup.php:161
+msgid "Install Recommended Plugins"
 msgstr ""
 
 #. %s is the plugin name.
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-notify-system.php:121
+#: inc/libraries/class-epsilon-init-notify-system.php:55
 #, php-format
 msgid "Install: %s"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:181
-#: inc/welcome-screen/class-datarc-notify-system.php:189
-msgid "Install: Contact Form 7"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:125
-#: inc/welcome-screen/class-datarc-notify-system.php:133
-msgid "Install: Datarc Companion Plugin"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:139
-#: inc/welcome-screen/class-datarc-notify-system.php:147
-msgid "Install: Elementor Page Builder Plugin"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:195
-#: inc/welcome-screen/class-datarc-notify-system.php:203
-msgid "Install: One Click Demo Import"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:153
-#: inc/welcome-screen/class-datarc-notify-system.php:161
-msgid "Install: Weglot Translate Plugin"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:167
-#: inc/welcome-screen/class-datarc-notify-system.php:175
-msgid "Install: WooCommerce"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:377
-msgid "Integrations"
 msgstr ""
 
 #: templates/content-none.php:41
@@ -632,69 +395,46 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:560
-msgid "Items group"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:546
-msgid "Items spacing"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc.php:144
-msgid "Jetpack"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:87
-msgid "Label"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:89
-msgid "Layout"
+#: inc/libraries/class-epsilon-dashboard-setup.php:407
+msgid "Launch wizard"
 msgstr ""
 
 #: comments.php:63
 msgid "LEAVE A COMMENT"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:389
-msgid "Left"
+#: inc/libraries/class-epsilon-dashboard-setup.php:420
+msgid "Lend a hand and share your thoughts"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-typography.php:323
-msgid "Letter Spacing"
+#: inc/libraries/class-epsilon-dashboard-setup.php:155
+msgid ""
+"Let's get started <span class=\"dashicons dashicons-arrow-right-alt2\">"
+"</span>"
 msgstr ""
 
-#. Section limit
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-repeater.php:290
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:353
-msgid "Limit: "
+#: inc/libraries/class-epsilon-dashboard-setup.php:455
+msgid ""
+"Mind you that we use these as a way to facilitate compatible product "
+"discovery - as in: plugins that enhance the\n"
+"\t\tuser experience with any of our products. But, in the end, the user "
+"should always have a say in it."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-typography.php:314
-msgid "Line Height"
+#: inc/libraries/class-epsilon-dashboard-setup.php:209
+msgid "Name and email address"
 msgstr ""
 
 #: templates/pagination.php:20
 msgid "Newer Post"
 msgstr ""
 
+#: inc/libraries/class-epsilon-dashboard-setup.php:171
+msgid "Next <span class=\"dashicons dashicons-arrow-right-alt2\"></span>"
+msgstr ""
+
 #: inc/datarc-functions.php:82
 msgid "No Comments"
-msgstr ""
-
-#: inc/welcome-screen/sections/getting-started.php:15
-msgid "No recommended actions left to perform"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:409
-msgid "No Repeat"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:195
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:208
-#: inc/datarc-framework/epsilon-framework/classes/class-epsilon-ajax-controller.php:37
-#: inc/datarc-framework/epsilon-framework/classes/class-epsilon-ajax-controller.php:50
-msgid "Not allowed"
 msgstr ""
 
 #: templates/content-none.php:15
@@ -705,14 +445,8 @@ msgstr ""
 msgid "Older Post"
 msgstr ""
 
-#: inc/classes/Class-Config.php:88
+#: inc/classes/Class-Config.php:105
 msgid "One Page Menu"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:95
-msgid ""
-"Only sections that have an ID are selectable, please edit section id's to "
-"see all the sections!"
 msgstr ""
 
 #: templates/404.php:24
@@ -727,81 +461,23 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
+#: inc/customizer/fields/fields.php:23
+msgid "Pick the theme color."
+msgstr ""
+
 #. %s is the plugin name
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-notify-system.php:129
+#: inc/libraries/class-epsilon-init-notify-system.php:63
 #, php-format
 msgid "Please activate %s in order to create the demo content."
 msgstr ""
 
-#: inc/welcome-screen/class-datarc-notify-system.php:251
-msgid ""
-"Please activate Contact Form 7. Note that you won't be able to use Contact "
-"Form without it."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:218
-msgid "Please activate Datarc Companion plugin."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:265
-msgid "Please activate Elementor page builder plugin."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:295
-msgid "Please activate One Click Demo Import plugin to import demo data."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:280
-msgid "Please activate Weglot Translate plugin."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:236
-msgid ""
-"Please activate WooCommerce. Note that you won't be able to use the shop "
-"without it."
-msgstr ""
-
 #. %s is the plugin name.
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-notify-system.php:123
+#: inc/libraries/class-epsilon-init-notify-system.php:57
 #, php-format
 msgid "Please install %s in order to create the demo content."
 msgstr ""
 
-#: inc/welcome-screen/class-datarc-notify-system.php:246
-#: inc/welcome-screen/class-datarc-notify-system.php:254
-msgid ""
-"Please install Contact Form 7. Note that you won't be able to use Contact "
-"Form without it."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:213
-#: inc/welcome-screen/class-datarc-notify-system.php:221
-msgid "Please install Datarc Companion plugin."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:260
-#: inc/welcome-screen/class-datarc-notify-system.php:268
-msgid "Please install Elementor page builder plugin."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:290
-#: inc/welcome-screen/class-datarc-notify-system.php:298
-msgid "Please install One Click Demo Import plugin to import demo data."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:275
-#: inc/welcome-screen/class-datarc-notify-system.php:283
-msgid "Please install Weglot Translate plugin."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc-notify-system.php:231
-#: inc/welcome-screen/class-datarc-notify-system.php:239
-msgid ""
-"Please install WooCommerce. Note that you won't be able to use the shop "
-"without it."
-msgstr ""
-
-#: inc/welcome-screen/class-datarc.php:165
+#: inc/libraries/class-epsilon-dashboard-setup.php:167
 msgid "Plugins"
 msgstr ""
 
@@ -809,20 +485,16 @@ msgstr ""
 msgid "Post Comment"
 msgstr ""
 
-#: inc/hooks/hooks-functions.php:361
+#: inc/hooks/hooks-functions.php:341
 msgid "Post Tags"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-doubled.php:51
-msgid "Press return or enter to open this section"
-msgstr ""
-
-#: inc/classes/Class-Config.php:87
+#: inc/classes/Class-Config.php:104
 msgid "Primary Menu"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-image-dimensions.php:96
-msgid "Ratio"
+#: inc/libraries/class-epsilon-dashboard-setup.php:448
+msgid "Privacy"
 msgstr ""
 
 #: templates/content-none.php:19
@@ -831,66 +503,8 @@ msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: inc/welcome-screen/class-datarc.php:118
-msgid "Recomended Actions"
-msgstr ""
-
-#: inc/welcome-screen/class-datarc.php:120
-msgid "Recomended Plugins :"
-msgstr ""
-
-#: inc/welcome-screen/sections/recommended-plugins.php:25
-msgid "Recommended"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:508
-msgid "Recommended Actions"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:514
+#: inc/libraries/class-epsilon-dashboard-setup.php:442
 msgid "Recommended Plugins"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:313
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:112
-msgid "Recommended resolution:"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:526
-msgid "Registration"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/class-epsilon-framework.php:259
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:58
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:135
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:321
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:118
-msgid "Remove"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:410
-msgid "Repeat"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:412
-msgid "Repeat X"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:411
-msgid "Repeat Y"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:118
-msgid "Review this theme on w.org"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:391
-msgid "Right"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/class-epsilon-framework.php:262
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-repeater.php:242
-msgid "Row"
 msgstr ""
 
 #: searchform.php:17
@@ -909,66 +523,31 @@ msgstr ""
 msgid "Search results for:"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:365
-msgid "Search sections"
+#: inc/customizer/fields/fields.php:163
+msgid "Select the option to set blog page layout."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:366
-msgid "Search sections &hellip;"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:72
-msgid "Section"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:189
-msgid "Section Class"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:376
-msgid "Sections"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-repeater.php:290
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:354
-msgid "sections"
-msgstr ""
-
-#: inc/welcome-screen/sections/support.php:17
-msgid "See our full documentation"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:267
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-upsell.php:70
-msgid "See what's in the PRO version"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-section-navigation-menu.php:78
-msgid "Select a Section"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:325
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:126
-msgid "Select File"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:80
+#: inc/customizer/fields/fields.php:35
 msgid "Set instagram access token."
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:330
-msgid "Set Post Excerpt"
+#: inc/customizer/fields/fields.php:149
+msgid "Set post excerpt length"
 msgstr ""
 
-#: inc/welcome-screen/class-datarc.php:138
-msgid "Set Static FrontPage"
+#: inc/customizer/fields/fields.php:150
+msgid "Set post excerpt length."
 msgstr ""
 
 #: inc/datarc-widgets-reg.php:19
 msgid "Sidebar"
 msgstr ""
 
-#: inc/classes/Class-Config.php:89
+#: inc/libraries/class-epsilon-dashboard-setup.php:216
+msgid "Site URL, WP Version, PHP Version, plugins and themes"
+msgstr ""
+
+#: inc/classes/Class-Config.php:106
 msgid "Social Menu"
 msgstr ""
 
@@ -978,150 +557,86 @@ msgid ""
 "different keywords."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:587
-msgid "Spacing bottom"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:574
-msgid "Spacing top"
-msgstr ""
-
-#: inc/welcome-screen/sections/getting-started.php:11
+#: inc/libraries/class-epsilon-dashboard-setup.php:405
 msgid "Step 1 - Implement recommended actions"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:27
+#: inc/libraries/class-epsilon-dashboard-setup.php:410
 msgid "Step 2 - Check our documentation"
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:35
+#: inc/libraries/class-epsilon-dashboard-setup.php:415
 msgid "Step 3 - Customize everything"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:258
+#: inc/customizer/fields/fields.php:114
 msgid "Sticky Header Nav Bar Menu Color"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:532
-msgid "Stretch"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:86
-msgid "Style"
-msgstr ""
-
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:520
-msgid "Support"
+#: inc/customizer/fields/fields.php:124
+msgid "Sticky Header Nav Bar Menu Hover Color"
 msgstr ""
 
 #. Name of the template
 msgid "Template Builder Page"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:279
-msgid "Text Color"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-section-repeater.php:371
-msgid "The search results will be updated as you type."
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:58
+#: inc/customizer/fields/fields.php:22
 msgid "Theme Color"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-typography.php:272
-msgid "Theme default"
+#: inc/customizer/fields/sections.php:27
+msgid "Theme Options"
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:22
-msgid "Theme options"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-color-coded-categories.php:112
-msgid ""
-"This color will affect category related elements such as links, titles, etc. "
-"(defined by your theme)"
-msgstr ""
-
-#: inc/welcome-screen/sections/support.php:14
-msgid ""
-"This is the place to go to reference different aspects of the theme. Our "
-"online documentation is an incredible resource for learning the ins and outs "
-"of using datarc."
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/backend/class-epsilon-content-backup.php:221
-msgid "This page contains the content created by the customizer."
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:600
-msgid "Title & description alignment"
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:537
+#: inc/customizer/fields/fields.php:266
 msgid "Toggle the footer social icon active."
 msgstr ""
 
-#: inc/datarc-framework/customizer/customizer.php:508
-msgid "Toggle the Footer Widget Show or Hide."
-msgstr ""
-
-#: inc/datarc-framework/customizer/customizer.php:119
+#: inc/customizer/fields/fields.php:52
 msgid "Toggle the header top social active."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:387
-msgid "Top"
+#: inc/customizer/fields/fields.php:255
+msgid "Toggle to display footer widgets."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:386
-msgid "Top Left"
+#: inc/customizer/fields/fields.php:63
+msgid "Toggle to show header search option."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:388
-msgid "Top Right"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:116
-msgid "Twitter"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:287
-#: inc/datarc-framework/epsilon-framework/customizer/sections/class-epsilon-section-recommended-actions.php:353
-msgid "Update"
-msgstr ""
-
-#: inc/datarc-framework/epsilon-framework/class-epsilon-framework.php:261
-#: inc/datarc-framework/epsilon-framework/classes/output/class-epsilon-repeater-templates.php:311
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-image.php:110
-msgid "Upload image"
-msgstr ""
-
-#: inc/welcome-screen/sections/getting-started.php:36
+#: inc/libraries/class-epsilon-dashboard-setup.php:416
 msgid ""
 "Using the WordPress Customizer you can easily customize every aspect of the "
 "theme."
 msgstr ""
 
-#: inc/welcome-screen/sections/recommended-plugins.php:29
-msgid "Version:"
+#: inc/libraries/class-epsilon-dashboard-setup.php:452
+msgid "We believe in a better and streamlined user experiences"
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/classes/helpers/class-epsilon-section-repeater-helper.php:518
-msgid "Vertical alignment"
-msgstr ""
-
-#: inc/welcome-screen/sections/support.php:5
+#: inc/libraries/class-epsilon-dashboard-setup.php:406
 msgid ""
-"We offer excellent support through our advanced ticketing system. Make sure "
-"to register your purchase before contacting support!"
+"We compiled a list of steps for you, to take make sure the experience you "
+"will have using one of our products is very easy to follow."
 msgstr ""
 
-#: inc/welcome-screen/sections/getting-started.php:12
+#. 1 is Theme Name, 2 is opening Anchor, 3 is closing.
+#: inc/libraries/class-epsilon-dashboard-setup.php:423
+#, php-format
 msgid ""
-"We've compiled a list of steps for you, to take make sure the experience "
-"you'll have using one of our products is very easy to follow."
+"We worked hard on making %1$s the best one out there. We are interested in "
+"hearing your thoughts about %1$s and what we could do to make it even better."
+"<br/> <br/>"
+msgstr ""
+
+#. 1 is Theme Name, 2 is opening Anchor, 3 is closing.
+#: inc/class-epsilon-init-dashboard.php:143
+#, php-format
+msgid ""
+"We've been working hard on making %1$s the best one out there. We're "
+"interested in hearing your thoughts about %1$s and what we could do to make "
+"it even better. %2$sSend your feedback our way%3$s."
 msgstr ""
 
 #: comments.php:55
@@ -1129,27 +644,25 @@ msgid "Website"
 msgstr ""
 
 #. Notice Title
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:363
+#: inc/libraries/class-epsilon-dashboard-setup.php:89
 #, php-format
 msgid "Welcome to %1$s"
 msgstr ""
 
-#. Welcome Screen Title.
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:427
-#, php-format
-msgid "Welcome to %1$s - v"
+#: inc/libraries/class-epsilon-dashboard-setup.php:145
+msgid "Welcome to Datarc"
 msgstr ""
 
 #. Notice
-#: inc/welcome-screen/class-epsilon-welcome-screen.php:367
+#: inc/libraries/class-epsilon-dashboard-setup.php:93
 #, php-format
 msgid ""
 "Welcome! Thank you for choosing %3$s! To fully take advantage of the best "
 "our theme can offer please make sure you visit our %1$swelcome page%2$s."
 msgstr ""
 
-#: inc/datarc-framework/epsilon-framework/customizer/controls/class-epsilon-control-image-dimensions.php:88
-msgid "Width"
+#: inc/libraries/class-epsilon-dashboard-setup.php:202
+msgid "What permissions are being granted"
 msgstr ""
 
 #: inc/datarc-widgets-reg.php:29
@@ -1166,4 +679,18 @@ msgstr ""
 
 #: comments.php:53
 msgid "Your Name"
+msgstr ""
+
+#: inc/libraries/class-epsilon-dashboard-setup.php:180
+msgid ""
+"Your new theme has been all set up. Enjoy your new theme by <a href=\"https:"
+"//www.colorlib.com\">Colorlib</a>."
+msgstr ""
+
+#: inc/libraries/class-epsilon-dashboard-setup.php:208
+msgid "YOUR PROFILE OVERVIEW"
+msgstr ""
+
+#: inc/libraries/class-epsilon-dashboard-setup.php:215
+msgid "YOUR SITE OVERVIEW"
 msgstr ""

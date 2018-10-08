@@ -47,8 +47,8 @@
 		define( 'DATARC_DIR_PATH_INC', DATARC_DIR_PATH.'inc/' );
 	
 	//Datarc framework Folder Directory
-	if( !defined( 'DATARC_DIR_PATH_FRAM' ) )
-		define( 'DATARC_DIR_PATH_FRAM', DATARC_DIR_PATH_INC.'datarc-framework/' );
+	if( !defined( 'DATARC_DIR_PATH_LIBS' ) )
+		define( 'DATARC_DIR_PATH_LIBS', DATARC_DIR_PATH_INC.'libraries/' );
 	
 	//Classes Folder Directory
 	if( !defined( 'DATARC_DIR_PATH_CLASSES' ) )
@@ -76,40 +76,22 @@
 	require_once( DATARC_DIR_PATH_INC . 'support-functions.php' );
 	require_once( DATARC_DIR_PATH_INC . 'wp-html-helper.php' );
 	require_once( DATARC_DIR_PATH_INC . 'wp_bootstrap_pagination.php' );
-	require_once( DATARC_DIR_PATH_FRAM . 'customizer/sanitization-callbacks.php' );
-	require_once( DATARC_DIR_PATH_FRAM . 'customizer/customizer.php' );
-	require_once( DATARC_DIR_PATH_FRAM . 'epsilon-framework/class-epsilon-framework.php' );
-	require DATARC_DIR_PATH_INC . 'welcome-screen/class-datarc.php';
-	
-
-	//
 	require_once( DATARC_DIR_PATH_CLASSES . 'Class-Enqueue.php' );
-	require_once( DATARC_DIR_PATH_CLASSES . 'Class-Config.php' );
 	require_once( DATARC_DIR_PATH_HOOKS . 'hooks.php' );
-	require_once( DATARC_DIR_PATH_HOOKS . 'hooks-functions.php' );
-	
-	
-	// Datarc global variable define
-	global $datarc;
-	$datarc['datarcobj'] = new Datarc();
-	
-	
-	// Datarc theme support
-	add_action( 'after_setup_theme', 'datarc_themesupport' );
-	function datarc_themesupport(){
-		global $datarc;
-		$datarcobj = $datarc['datarcobj'];
-		$datarcobj->support();
-	}
-	
-	// Datarc theme init
-	add_action( 'init', 'datarc_init' );
-	function datarc_init(){
-		global $datarc;
-		$datarcobj = $datarc['datarcobj'];
-		$datarcobj->init();
-	}
+	require_once( DATARC_DIR_PATH_HOOKS . 'hooks-functions.php' );	
+	require_once( DATARC_DIR_PATH_CLASSES . 'Class-Config.php' );
+	require_once( DATARC_DIR_PATH_INC . 'customizer/customizer.php' );
+	require_once( DATARC_DIR_PATH_INC . 'class-epsilon-dashboard-autoloader.php' );
+	require_once( DATARC_DIR_PATH_INC . 'class-epsilon-init-dashboard.php' );
 
 
+	/**
+	 * Instantiate Datarc object
+	 *
+	 * Inside this object:
+	 * Enqueue scripts, Google font, Theme support features.
+	 *
+	 */
+	$Datarc = new Datarc();
 	
 ?>

@@ -50,9 +50,9 @@ if ( post_password_required() )
 	$req = get_option( 'require_name_email' );
 	$aria_req = ( $req ? "required='required'" : '' );
 	$fields =  array(
-	  'author' =>'<div class="bo12 of-hidden size19 m-b-20"><input class="sizefull s-text7 p-l-18 p-r-18" placeholder="'.esc_attr__( 'Your Name', 'datarc' ).'" type="text" name="author" value="'. esc_attr( $commenter['comment_author'] ).'" id="cName" '.$aria_req.'></div>',
-	  'email' =>'<div class="bo12 of-hidden size19 m-b-20"><input class="sizefull s-text7 p-l-18 p-r-18" placeholder="'.esc_attr__( 'Your Email', 'datarc' ).'" type="text" name="email"  value="' . esc_attr(  $commenter['comment_author_email'] ) .'" id="cEmail" '.$aria_req.'></div>',
-	  'url' =>'<div class="bo12 of-hidden size19 m-b-20"><input class="sizefull s-text7 p-l-18 p-r-18" placeholder="'.esc_attr__( 'Website', 'datarc' ).'" type="text" name="url" value="'. esc_attr( $commenter['comment_author_url'] ) .'" id="cWebsite"></div>',
+	  'author' =>'<div class="bo12 of-hidden size19-width100 m-b-20"><input class="sizefull border-none s-text7 p-l-18 p-r-18" placeholder="'.esc_attr__( 'Your Name', 'datarc' ).'" type="text" name="author" value="'. esc_attr( $commenter['comment_author'] ).'" id="cName" '.$aria_req.'></div>',
+	  'email' =>'<div class="bo12 of-hidden size19-width100 m-b-20"><input class="sizefull border-none s-text7 p-l-18 p-r-18" placeholder="'.esc_attr__( 'Your Email', 'datarc' ).'" type="text" name="email"  value="' . esc_attr(  $commenter['comment_author_email'] ) .'" id="cEmail" '.$aria_req.'></div>',
+	  'url' =>'<div class="bo12 of-hidden size19-width100 m-b-20"><input class="sizefull s-text7 p-l-18 border-none p-r-18" placeholder="'.esc_attr__( 'Website', 'datarc' ).'" type="text" name="url" value="'. esc_attr( $commenter['comment_author_url'] ) .'" id="cWebsite"></div>',
 	);
 	
 
