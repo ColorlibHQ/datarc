@@ -12,9 +12,9 @@ if( !defined( 'ABSPATH' ) ){
  */
 ?>
 
-<div class="pos-relative mc_embed_signup">
+<div class="pos-relative">
     <form role="search" class="subscription relative d-flex justify-content-center" action="<?php echo esc_url( site_url( '/' ) ); ?>">
         <input type="text" name="s" placeholder="<?php esc_html_e( 'Search', 'datarc' ); ?>">
-        <button type="submit" class="newsletter-btn" name="subscribe"><span class="lnr lnr-location"></span></button>
+        <button type="submit" class="newsletter-btn"><span class="lnr lnr-location"></span></button>
     </form>
 </div>

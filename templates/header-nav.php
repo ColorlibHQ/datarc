@@ -62,7 +62,7 @@
                                 'container'      => '',
                                 'menu_class'     => 'header-social d-flex align-items-center',
                                 'depth'          => 1,
-                                'fallback_cb'    => 'fashe_social_navwalker::fallback',
+                                'fallback_cb'    => 'datarc_social_navwalker::fallback',
                                 'walker'         => new datarc_social_navwalker(),
                             );  
                             wp_nav_menu( $args );

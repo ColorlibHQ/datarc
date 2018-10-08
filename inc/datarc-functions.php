@@ -256,5 +256,24 @@ function datarc_inline_bg_img( $bgUrl ){
     return $bg;
 }
 
+//  customize sidebar option value return
+function datarc_sidebar_opt(){
 
+    $sidebarOpt = datarc_opt( 'datarc-blog-sidebar-settings' );
+    $sidebar = '1';
+    // Blog Sidebar layout  opt
+    if( is_array( $sidebarOpt ) ){
+        $sidebarOpt =  $sidebarOpt;
+    }else{
+        $sidebarOpt =  json_decode( $sidebarOpt, true );
+    }
+    
+    
+    if( !empty( $sidebarOpt['columnsCount'] ) ){
+        $sidebar = $sidebarOpt['columnsCount'];
+    }
+
+
+    return $sidebar;
+}
 ?>

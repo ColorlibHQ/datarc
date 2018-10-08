@@ -385,7 +385,9 @@
 .section-half {
     padding: 75px 0
 }
-
+.border-none {
+    border: none !important;
+}
 .flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -765,7 +767,9 @@
     text-transform: uppercase;
     font-size: 12px
 }
-
+.default-header nav .main-menu a.nav-link {
+    padding: 0px;
+}
 @media (max-width: 991px) {
     .default-header nav .main-menu a {
         margin: 0 5px

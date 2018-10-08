@@ -3537,7 +3537,10 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 }
 
 .size19 {
-	max-width: 266px;
+    max-width: 266px;
+    height: 50px;
+}
+.size19-width100 {
 	height: 50px;
 }
 

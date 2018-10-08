@@ -1,0 +1,112 @@
+/**
+ * Common css
+ */
+
+.elementor-icon,
+.elementor-widget-counter .elementor-counter-number-wrapper,
+.elementor-widget-accordion .elementor-accordion .elementor-tab-title.elementor-active,
+.elementor-widget-tabs .elementor-tab-title.elementor-active,
+.elementor-widget-icon-list .elementor-icon-list-icon i {
+    color: #00ff8c;
+}
+.elementor-widget-tabs .elementor-tab-title,
+.elementor-widget-accordion .elementor-accordion .elementor-tab-title {
+    color: #222;
+}
+.elementor-accordion .elementor-tab-content,
+.elementor-accordion .elementor-accordion-item {
+    border-color: #eee;
+}
+.elementor-widget-tabs .elementor-tab-content, 
+.elementor-widget-tabs .elementor-tab-title:after,
+.elementor-widget-tabs .elementor-tab-title:before,
+.elementor-widget-tabs .elementor-tab-content,
+.elementor-widget-tabs .elementor-tab-desktop-title.elementor-active {
+    border-color: #eee;
+}
+.elementor-widget .elementor-icon-list-item {
+    margin-bottom: 8px;
+}
+/**
+ * Progress Css
+ */
+.elementor-widget-progress .elementor-title {
+    color: #222;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-weight: bold;
+}
+.elementor-progress-wrapper {
+    background-color: #eee;
+    color: #222;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    height: 22px;
+}
+.elementor-progress-bar {
+    background-color: #00ff8c;
+    border-radius: 50px;
+    height: 22px;
+    line-height: 22px;
+}
+/**
+ * Button Css
+ */
+.elementor-button.elementor-size-xs,
+.elementor-button.elementor-size-lg,
+.elementor-button.elementor-size-xl,
+.elementor-button.elementor-size-md,
+.elementor-button.elementor-size-sm {
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #00ff8c;
+    color: #222;
+    font-weight: 600;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.elementor-button.elementor-size-xs:hover,
+.elementor-button.elementor-size-lg:hover,
+.elementor-button.elementor-size-xl:hover,
+.elementor-button.elementor-size-md:hover,
+.elementor-button.elementor-size-sm:hover {
+    background-color: #00ff8c;
+    color: #fff;
+}
+/**
+ * Icon box and image box css
+ *
+ */
+.elementor-image-box-title,
+.elementor-icon-box-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+ }
+/**
+ * Testimonial css
+ *
+ */
+.elementor-testimonial-wrapper .elementor-testimonial-content {
+    font-size: 14px;
+}
+.elementor-testimonial-wrapper .elementor-testimonial-name {
+    font-weight: 500;
+    color: #222;
+}
+/**
+ * Toggle css
+ *
+ */
+.elementor-toggle .elementor-tab-title,
+.elementor-toggle .elementor-tab-content {
+    border-color: #eee;
+
+}
+.elementor-toggle .elementor-tab-title {
+    color: #222;
+}
+.elementor-toggle .elementor-tab-title.elementor-active {
+    color: #00ff8c;
+}

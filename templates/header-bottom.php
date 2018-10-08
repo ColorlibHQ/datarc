@@ -1,4 +1,4 @@
-<section class="bg-title-page p-t-100 p-b-50 flex-col-c-m" <?php //echo datarc_inline_bg_img( $setbgurl ); ?>>
+<section class="bg-title-page p-t-100 p-b-50 flex-col-c-m">
 	<?php 
 	if ( is_archive() ){
 		the_archive_title('<h2 class="l-text2 fz-30 t-center">', '</h2>');

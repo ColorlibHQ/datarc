@@ -92,16 +92,9 @@
 	if( !function_exists('datarc_blog_col_start_cb') ){
 		function datarc_blog_col_start_cb(){
 			
-			$sidebarOpt = datarc_opt( 'datarc-blog-sidebar-settings' );
-						
-			// Blog Sidebar layout  opt
-			$sidebarOpt =  json_decode( $sidebarOpt, true );
-			
-			if( !empty( $sidebarOpt['columnsCount'] ) ){
-				$sidebarOpt = $sidebarOpt['columnsCount'];
-			}else{
-				$sidebarOpt = '';
-			}
+
+			$sidebarOpt = datarc_sidebar_opt();
+		
 				
 			//
 			if( !is_page() ){
@@ -111,12 +104,8 @@
 					$col = '9'.$pullRight;
 				}else{
 
-					if( !is_single() ){
-						$col = '12';
-					}else{
-						$col = '10 offset-lg-1';
-					}
-
+					$col = '10 offset-lg-1';
+					
 				}
 			}else{
 				$col = '9';
@@ -315,18 +304,9 @@
 	// Blog page sidebar hook function.
 	if( !function_exists('datarc_blog_sidebar_cb') ){
 		function datarc_blog_sidebar_cb(){
-			
-			$sidebarOpt = datarc_opt( 'datarc-blog-sidebar-settings' );			
-			
-			// Blog Sidebar layout  opt
-			$sidebarOpt =  json_decode( $sidebarOpt, true );
-			
-			if( !empty( $sidebarOpt['columnsCount'] ) ){
-				$sidebarOpt = $sidebarOpt['columnsCount'];
-			}else{
-				$sidebarOpt = '';
-			}
-			
+
+			$sidebarOpt = datarc_sidebar_opt();
+				
 			if( $sidebarOpt != '1'  || is_page()  ){
 				get_sidebar();
 			}
