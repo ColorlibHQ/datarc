@@ -1,20 +1,20 @@
-<?php 
-	// Copy right text
-	$copyText = sprintf( __( 'Copyright &copy; %s  |  All rights reserved to', 'datarc' ), date('Y') );
-	
 
-	$setCopyright = datarc_opt('datarc-copyright-text-settings');
-	
-	if( $setCopyright ){
-		$copyRightText = $setCopyright;
-	}else{
-	   $copyRightText = sprintf( ' %s <a href="%s" target="_blank">Colorlib</a>', $copyText, 'https://colorlib.com' );
-    }
-	
+<?php 
+// Block direct access
+if( !defined( 'ABSPATH' ) ){
+    exit( 'Direct script access denied.' );
+}
+/**
+ * @Packge     : Datarc
+ * @Version    : 1.0
+ * @Author     : Colorlib
+ * @Author URI : http://colorlib.com/wp/
+ *
+ */
 
 ?>
 <div class="footer-bottom d-flex justify-content-between align-items-center">
-    <p class="footer-text m-0"><?php echo wp_kses_post( $copyRightText ); ?></p>
+    <p class="footer-text m-0"><?php echo wp_kses_post( datarc_opt('datarc-copyright-text-settings') ); ?></p>
     <?php 
     // Social Media
     if( datarc_opt('datarc-footersocial-toggle-settings') ){

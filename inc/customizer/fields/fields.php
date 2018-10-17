@@ -18,11 +18,12 @@
 Epsilon_Customizer::add_field(
     'datarc_themecolor',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Theme Color', 'datarc' ),
-        'description' => esc_html__( 'Pick the theme color.', 'datarc' ),
-        'section'     => 'datarc_general_options_section',
-        'default'     => '#00ff8c',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Theme Color', 'datarc' ),
+        'description'       => esc_html__( 'Pick the theme color.', 'datarc' ),
+        'section'           => 'datarc_general_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#00ff8c',
     )
 );
 
@@ -69,30 +70,33 @@ Epsilon_Customizer::add_field(
 Epsilon_Customizer::add_field(
     'datarc_header_navbar_bgColor',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Nav Bar Background Color', 'datarc' ),
-        'section'     => 'datarc_headertop_options_section',
-        'default'     => '',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Header Nav Bar Background Color', 'datarc' ),
+        'section'           => 'datarc_headertop_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '',
     )
 );
 // Header Sticky  Nav Bar Background Color Picker
 Epsilon_Customizer::add_field(
     'datarc_header_navbarsticky_bgColor',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Sticky Nav Bar Background Color', 'datarc' ),
-        'section'     => 'datarc_headertop_options_section',
-        'default'     => '',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Header Sticky Nav Bar Background Color', 'datarc' ),
+        'section'           => 'datarc_headertop_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '',
     )
 );
 // Header Nav Bar Menu Color Picker
 Epsilon_Customizer::add_field(
     'datarc_header_navbar_menuColor',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Nav Bar Menu Color', 'datarc' ),
-        'section'     => 'datarc_headertop_options_section',
-        'default'     => '',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Header Nav Bar Menu Color', 'datarc' ),
+        'section'           => 'datarc_headertop_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '',
     )
 );
 
@@ -100,40 +104,44 @@ Epsilon_Customizer::add_field(
 Epsilon_Customizer::add_field(
     'datarc_header_navbar_menuHovColor',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Nav Bar Menu Hover Color', 'datarc' ),
-        'section'     => 'datarc_headertop_options_section',
-        'default'     => '',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Header Nav Bar Menu Hover Color', 'datarc' ),
+        'section'           => 'datarc_headertop_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '',
     )
 );
 // Header Nav Bar Menu Color Picker
 Epsilon_Customizer::add_field(
     'datarc_header_sticky_navbar_menuColor',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Sticky Header Nav Bar Menu Color', 'datarc' ),
-        'section'     => 'datarc_headertop_options_section',
-        'default'     => '',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Sticky Header Nav Bar Menu Color', 'datarc' ),
+        'section'           => 'datarc_headertop_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '',
     )
 );
 // Header Nav Bar Menu Hover Color Picker
 Epsilon_Customizer::add_field(
     'datarc_header_sticky_navbar_menuHovColor',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Sticky Header Nav Bar Menu Hover Color', 'datarc' ),
-        'section'     => 'datarc_headertop_options_section',
-        'default'     => '',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Sticky Header Nav Bar Menu Hover Color', 'datarc' ),
+        'section'           => 'datarc_headertop_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '',
     )
 );
 // Header dropdown menu hover color field
 Epsilon_Customizer::add_field(
     'datarc_headerbgcolor',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Background Color', 'datarc' ),
-        'section'     => 'colors',
-        'default'     => '',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Header Background Color', 'datarc' ),
+        'section'           => 'colors',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '',
     )
 );
 
@@ -215,30 +223,33 @@ Epsilon_Customizer::add_field(
 Epsilon_Customizer::add_field(
     'datarc_fof_textonecolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( '404 Text #1 Color', 'datarc' ),
-        'section'     => 'datarc_fof_options_section',
-        'default'     => '#222',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( '404 Text #1 Color', 'datarc' ),
+        'section'           => 'datarc_fof_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#222',
     )
 );
 // 404 text #2 color field
 Epsilon_Customizer::add_field(
     'datarc_fof_texttwocolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( '404 Text #2 Color', 'datarc' ),
-        'section'     => 'datarc_fof_options_section',
-        'default'     => '#222',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( '404 Text #2 Color', 'datarc' ),
+        'section'           => 'datarc_fof_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#222',
     )
 );
 // 404 background color field
 Epsilon_Customizer::add_field(
     'datarc_fof_bgcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( '404 Page Background Color', 'datarc' ),
-        'section'     => 'datarc_fof_options_section',
-        'default'     => '#fff',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( '404 Page Background Color', 'datarc' ),
+        'section'           => 'datarc_fof_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#fff',
     )
 );
 
@@ -275,67 +286,73 @@ Epsilon_Customizer::add_field(
         'type'        => 'epsilon-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'datarc' ),
         'section'     => 'datarc_footer_options_section',
-        'default'     => '',
+        'default'     => 'Copyright © 2018 All rights reserved.',
     )
 );
 // Footer background color field
 Epsilon_Customizer::add_field(
     'datarc_footer_bgColor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Footer Background Color', 'datarc' ),
-        'section'     => 'datarc_footer_options_section',
-        'default'     => '#222',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Footer Background Color', 'datarc' ),
+        'section'           => 'datarc_footer_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#222',
     )
 );
 // Footer text Color  field
 Epsilon_Customizer::add_field(
     'datarc_footer_color_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Footer Text Color', 'datarc' ),
-        'section'     => 'datarc_footer_options_section',
-        'default'     => '#777',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Footer Text Color', 'datarc' ),
+        'section'           => 'datarc_footer_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#777',
     )
 );
 // Footer widget title color field
 Epsilon_Customizer::add_field(
     'datarc_footer_widgettitlecolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Footer Widget Title Color', 'datarc' ),
-        'section'     => 'datarc_footer_options_section',
-        'default'     => '#FFFFFF',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Footer Widget Title Color', 'datarc' ),
+        'section'           => 'datarc_footer_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#FFFFFF',
     )
 );
 // Footer widget anchor color field
 Epsilon_Customizer::add_field(
     'datarc_footer_anchorcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Footer Widget Anchor Color', 'datarc' ),
-        'section'     => 'datarc_footer_options_section',
-        'default'     => '#777',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Footer Anchor Color', 'datarc' ),
+        'section'           => 'datarc_footer_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#777',
     )
 );
 // Footer widget anchor hover color field
 Epsilon_Customizer::add_field(
     'datarc_footer_anchorhovcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Footer Widget Anchor Hover Color', 'datarc' ),
-        'section'     => 'datarc_footer_options_section',
-        'default'     => '#00ff8c',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Footer Anchor Hover Color', 'datarc' ),
+        'section'           => 'datarc_footer_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#00ff8c',
     )
 );
 // Footer widget anchor hover color field
 Epsilon_Customizer::add_field(
     'datarc_footer_bordercolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Footer Border Color', 'datarc' ),
-        'section'     => 'datarc_footer_options_section',
-        'default'     => '#eee',
+        'type'              => 'epsilon-color-picker',
+        'label'             => esc_html__( 'Footer Border Color', 'datarc' ),
+        'section'           => 'datarc_footer_options_section',
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '#eee',
     )
 );
 
