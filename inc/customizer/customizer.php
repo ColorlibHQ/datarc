@@ -38,7 +38,7 @@ class datarc_theme_customizer {
     // Customizer js enqueue
     public function datarc_customizer_js(){
 
-        wp_enqueue_script( 'datarc-customizer', DATARC_DIR_URI.'inc/datarc-framework/customizer/js/customizer.js', array('customize-controls'), '1.0', true );
+        wp_enqueue_script( 'datarc-customizer', DATARC_DIR_URI.'inc/customizer/js/customizer.js', array('customize-controls'), '1.0', true );
 
         wp_localize_script( 'datarc-customizer', 'customizerdata', array(
 

@@ -33,4 +33,52 @@
     } );
 
 
+    // Footer section
+    api.section( 'datarc_footer_options_section' , function( section ){
+
+        section.expanded.bind( function( isExpanded ){
+
+
+            // Footer Widget option show/hide
+            var $widget_toggle  = $('#datarc-widget-toggle-settings'),
+                $widgettitle    = $('#customize-control-datarc_footer_widgettitlecolor_settings');
+
+            // Default
+
+            if( $widget_toggle.is( ':checked' ) ){
+
+                $widgettitle.show('slow');
+
+            }else{
+
+                $widgettitle.hide('slow');
+
+            }
+
+            // on click
+            $widget_toggle.on( 'click',  function(){
+
+                var $this =  $( this );
+
+                if( $this.is(':checked') ){
+
+                    $widgettitle.show('slow');
+
+                }else{
+
+                    $widgettitle.hide('slow');
+
+                }
+
+
+            } ); 
+
+
+
+        } );
+
+    } );
+
+
+
 })( jQuery, wp.customize );
