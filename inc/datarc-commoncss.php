@@ -17,31 +17,31 @@ function datarc_common_custom_css(){
     
     wp_enqueue_style( 'datarc-common', get_template_directory_uri().'/assets/css/common.css' );
 		
-		$headerBg          = get_header_image();
-		$headerTextColor   = get_header_textcolor();
-		$headerbgcolor     = datarc_opt('datarc_headerbgcolor');
+		$headerBg          = esc_url( get_header_image() );
+		$headerTextColor   = esc_attr( get_header_textcolor() );
+		$headerbgcolor     = esc_attr( datarc_opt('datarc_headerbgcolor') );
 
-		$navbarbg 			= datarc_opt( 'datarc_header_navbar_bgColor' );
-		$stickynavbarbg 	= datarc_opt( 'datarc_header_navbarsticky_bgColor' );
+		$navbarbg 			= esc_attr( datarc_opt( 'datarc_header_navbar_bgColor' ) );
+		$stickynavbarbg 	= esc_attr( datarc_opt( 'datarc_header_navbarsticky_bgColor' ) );
 
-		$navmenuColor 		= datarc_opt( 'datarc_header_navbar_menuColor' );
-		$navmenuHovColor 	= datarc_opt( 'datarc_header_navbar_menuHovColor' );
-		$stickynavmenuColor 	= datarc_opt( 'datarc_header_sticky_navbar_menuColor' );
-		$stickynavmenuHovColor 	= datarc_opt( 'datarc_header_sticky_navbar_menuHovColor' );
+		$navmenuColor 		= esc_attr( datarc_opt( 'datarc_header_navbar_menuColor' ) );
+		$navmenuHovColor 	= esc_attr( datarc_opt( 'datarc_header_navbar_menuHovColor' ) );
+		$stickynavmenuColor 	= esc_attr( datarc_opt( 'datarc_header_sticky_navbar_menuColor' ) );
+		$stickynavmenuHovColor 	= esc_attr( datarc_opt( 'datarc_header_sticky_navbar_menuHovColor' ) );
 
 
-		$foftext1     	   = datarc_opt('datarc_fof_textonecolor_settings');
-		$foftext2     	   = datarc_opt('datarc_fof_texttwocolor_settings');
-		$fofbgcolor        = datarc_opt('datarc_fof_bgcolor_settings');
+		$foftext1     	   = esc_attr( datarc_opt('datarc_fof_textonecolor_settings') );
+		$foftext2     	   = esc_attr( datarc_opt('datarc_fof_texttwocolor_settings') );
+		$fofbgcolor        = esc_attr( datarc_opt('datarc_fof_bgcolor_settings') );
 
-		$footerbgColor     = datarc_opt('datarc_footer_bgColor_settings');
-		$footerTextColor   = datarc_opt('datarc_footer_color_settings');
-		$anchorcolor 	   = datarc_opt('datarc_footer_anchorcolor_settings');
-		$anchorhovcolor    = datarc_opt('datarc_footer_anchorhovcolor_settings');
-		$widgettitlecolor  = datarc_opt('datarc_footer_widgettitlecolor_settings');
-		$footerborder  	   = datarc_opt('datarc_footer_bordercolor_settings');
+		$footerbgColor     = esc_attr( datarc_opt('datarc_footer_bgColor_settings') );
+		$footerTextColor   = esc_attr( datarc_opt('datarc_footer_color_settings') );
+		$anchorcolor 	   = esc_attr( datarc_opt('datarc_footer_anchorcolor_settings') );
+		$anchorhovcolor    = esc_attr( datarc_opt('datarc_footer_anchorhovcolor_settings') );
+		$widgettitlecolor  = esc_attr( datarc_opt('datarc_footer_widgettitlecolor_settings') );
+		$footerborder  	   = esc_attr( datarc_opt('datarc_footer_bordercolor_settings') );
 
-		$themecolor  	   = datarc_opt('datarc_themecolor');
+		$themecolor  	   = esc_attr( datarc_opt('datarc_themecolor') );
 
         $customcss ="
 			.subscription .newsletter-btn:hover,
