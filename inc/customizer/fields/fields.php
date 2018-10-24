@@ -51,7 +51,7 @@ Epsilon_Customizer::add_field(
     'datarc-headersocial-toggle-settings',
     array(
         'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Header Social Show/Hide', 'datarc' ),
+        'label'       => esc_html__( 'Toggle Header Social', 'datarc' ),
         'description' => esc_html__( 'Toggle the header top social active.', 'datarc' ),
         'section'     => 'datarc_headertop_options_section',
         'default'     => true,
@@ -62,7 +62,7 @@ Epsilon_Customizer::add_field(
     'datarc-searchopt-toggle-settings',
     array(
         'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Header Search Option Show/Hide', 'datarc' ),
+        'label'       => esc_html__( 'Toggle Header Search', 'datarc' ),
         'description' => esc_html__( 'Toggle to show header search option.', 'datarc' ),
         'section'     => 'datarc_headertop_options_section',
         'default'     => true,
@@ -264,7 +264,7 @@ Epsilon_Customizer::add_field(
     'datarc-widget-toggle-settings',
     array(
         'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Footer widget show/hide', 'datarc' ),
+        'label'       => esc_html__( 'Toggle Footer widget', 'datarc' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'datarc' ),
         'section'     => 'datarc_footer_options_section',
         'default'     => true,
@@ -275,7 +275,7 @@ Epsilon_Customizer::add_field(
     'datarc-footersocial-toggle-settings',
     array(
         'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Footer Social Show/Hide', 'datarc' ),
+        'label'       => esc_html__( 'Toggle Footer Social', 'datarc' ),
         'description' => esc_html__( 'Toggle the footer social icon active.', 'datarc' ),
         'section'     => 'datarc_footer_options_section',
         'default'     => true,
