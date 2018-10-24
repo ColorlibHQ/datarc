@@ -102,7 +102,7 @@
 	        // register nav menu
 	        register_nav_menus( array(
 	            'primary-menu'   => esc_html__( 'Primary Menu', 'datarc' ),
-	            'onepage-menu'   => esc_html__( 'One Page Menu', 'datarc' ),
+	            'onepage-menu'   => esc_html__( 'One Page Menu ( For custom page )', 'datarc' ),
 	            'social-menu'    => esc_html__( 'Social Menu', 'datarc' ),
 	        ) );
 

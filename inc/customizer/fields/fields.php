@@ -28,12 +28,14 @@ Epsilon_Customizer::add_field(
 );
 
 // Instagram api key field
+$url = 'https://www.instagram.com/developer/authentication/';
+
 Epsilon_Customizer::add_field(
     'datarc_igaccess_token',
     array(
         'type'              => 'text',
         'label'             => esc_html__( 'Instagram Access Token', 'datarc' ),
-        'description'       => esc_html__( 'Set instagram access token.', 'datarc' ),
+        'description'       => sprintf( __( 'Set instagram access token. To get access token %s click here %s.', 'datarc' ), '<a target="_blank" href="'.esc_url( $url  ).'">', '</a>' ),
         'section'           => 'datarc_general_options_section',
         'sanitize_callback' => 'sanitize_text_field',
         'default'           => '',
@@ -49,7 +51,7 @@ Epsilon_Customizer::add_field(
     'datarc-headersocial-toggle-settings',
     array(
         'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Header Social Show/Hide', 'datarc' ),
+        'label'       => esc_html__( 'Toggle Header Social', 'datarc' ),
         'description' => esc_html__( 'Toggle the header top social active.', 'datarc' ),
         'section'     => 'datarc_headertop_options_section',
         'default'     => true,
@@ -60,7 +62,7 @@ Epsilon_Customizer::add_field(
     'datarc-searchopt-toggle-settings',
     array(
         'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Header Search Option Show/Hide', 'datarc' ),
+        'label'       => esc_html__( 'Toggle Header Search', 'datarc' ),
         'description' => esc_html__( 'Toggle to show header search option.', 'datarc' ),
         'section'     => 'datarc_headertop_options_section',
         'default'     => true,
@@ -205,7 +207,7 @@ Epsilon_Customizer::add_field(
         'label'             => esc_html__( '404 Text #1', 'datarc' ),
         'section'           => 'datarc_fof_options_section',
         'sanitize_callback' => 'sanitize_text_field',
-        'default'           => ''
+        'default'           => esc_html__( 'Ooops 404 Error !', 'datarc' )
     )
 );
 // 404 text #2 field
@@ -216,7 +218,7 @@ Epsilon_Customizer::add_field(
         'label'             => esc_html__( '404 Text #2', 'datarc' ),
         'section'           => 'datarc_fof_options_section',
         'sanitize_callback' => 'sanitize_text_field',
-        'default'           => ''
+        'default'           => esc_html__( 'Either something went wrong or the page dosen&rsquo;t exist anymore.', 'datarc' )
     )
 );
 // 404 text #1 color field
@@ -262,7 +264,7 @@ Epsilon_Customizer::add_field(
     'datarc-widget-toggle-settings',
     array(
         'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Footer widget show/hide', 'datarc' ),
+        'label'       => esc_html__( 'Toggle Footer widget', 'datarc' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'datarc' ),
         'section'     => 'datarc_footer_options_section',
         'default'     => true,
@@ -273,7 +275,7 @@ Epsilon_Customizer::add_field(
     'datarc-footersocial-toggle-settings',
     array(
         'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Footer Social Show/Hide', 'datarc' ),
+        'label'       => esc_html__( 'Toggle Footer Social', 'datarc' ),
         'description' => esc_html__( 'Toggle the footer social icon active.', 'datarc' ),
         'section'     => 'datarc_footer_options_section',
         'default'     => true,

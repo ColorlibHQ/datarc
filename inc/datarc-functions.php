@@ -15,7 +15,7 @@
  // theme option callback
 function datarc_opt( $id = null ){
 	
-	$opt = get_theme_mod( $id );
+	$opt = get_theme_mod( $id, true );
 	
 	$data = '';
 	
