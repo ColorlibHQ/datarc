@@ -344,6 +344,16 @@ class Epsilon_Dashboard_Setup {
 					),
 				),
 			),
+			array(
+
+				'id'          => 'datarc-check-dataimport',
+				'title'       => __( 'To import demo data go to Appearance > Import Demo Data', 'datarc' ),
+				'description' => __( 'Before import demo data make sure your install one click demo import plugin.', 'datarc' ),
+				'plugin_slug' => '',
+				'state'       => true,
+				'check'       => !empty( get_option( 'datarc_demodata_import' ) ) ? true : false,
+				'actions'     => array(),
+			),
 		);
 	}
 

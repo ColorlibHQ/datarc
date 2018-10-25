@@ -13,7 +13,6 @@
  * General Section Fields
  ***********************************/
 
-
 // Preloader background color field
 Epsilon_Customizer::add_field(
     'datarc_themecolor',
@@ -54,7 +53,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Toggle Header Social', 'datarc' ),
         'description' => esc_html__( 'Toggle the header top social active.', 'datarc' ),
         'section'     => 'datarc_headertop_options_section',
-        'default'     => true,
+        'default'     => false,
     )
 );
 // Header top search form show / Hide opt
@@ -65,7 +64,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Toggle Header Search', 'datarc' ),
         'description' => esc_html__( 'Toggle to show header search option.', 'datarc' ),
         'section'     => 'datarc_headertop_options_section',
-        'default'     => true,
+        'default'     => false,
     )
 );
 // Header Nav Bar Background Color Picker 
@@ -267,7 +266,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Toggle Footer widget', 'datarc' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'datarc' ),
         'section'     => 'datarc_footer_options_section',
-        'default'     => true,
+        'default'     => false,
     )
 );
 // Footer widget toggle field
@@ -278,7 +277,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Toggle Footer Social', 'datarc' ),
         'description' => esc_html__( 'Toggle the footer social icon active.', 'datarc' ),
         'section'     => 'datarc_footer_options_section',
-        'default'     => true,
+        'default'     => false,
     )
 );
 // Footer copyright text field
@@ -288,7 +287,7 @@ Epsilon_Customizer::add_field(
         'type'        => 'epsilon-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'datarc' ),
         'section'     => 'datarc_footer_options_section',
-        'default'     => 'Copyright © 2018 All rights reserved.',
+        'default'     => esc_html__( 'Copyright © 2018 All rights reserved.', 'datarc' ),
     )
 );
 // Footer background color field

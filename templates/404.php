@@ -22,7 +22,7 @@ if( !defined( 'ABSPATH' ) ){
 						<div class="inner-child-fof">
 							<?php 
 							//
-							echo '<h1 class="h1 m-b-30">'.esc_html( datarc_opt( 'datarc_fof_text_one' ) ).'</h1>';
+							echo '<h1 class="h1 m-b-30">'.esc_html( datarc_opt( 'datarc_fof_text_one' ), __( 'Ooops 404 Error !', 'datarc' ) ).'</h1>';
 
 							//
 							$anchor = datarc_anchor_tag(
@@ -32,9 +32,11 @@ if( !defined( 'ABSPATH' ) ){
 								)
 							);
 
+							$text = __( 'Either something went wrong or the page dosen&rsquo;t exist anymore.', 'datarc' );
+
 							echo datarc_paragraph_tag(
 								array(
-									'text' 	 => sprintf( '%s %s', esc_html( datarc_opt( 'datarc_fof_text_two' ) ), wp_kses_post( $anchor ) ),
+									'text' 	 => sprintf( '%s %s', esc_html( datarc_opt( 'datarc_fof_text_two', $text ) ), wp_kses_post( $anchor ) ),
 								)
 							);
 
