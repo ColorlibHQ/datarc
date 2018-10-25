@@ -26,13 +26,6 @@ function datarc_opt( $id = null, $default = ''  ){
 	return $data;
 }
 
-// custom meta id callback
-function datarc_meta( $id = '' ){
-    
-    $value = get_post_meta( get_the_ID(), '_datarc_'.$id, true );
-    
-    return $value;
-}
 // Blog Date Permalink
 function datarc_blog_date_permalink(){
 	
@@ -44,6 +37,7 @@ function datarc_blog_date_permalink(){
     
     return $link; 
 }
+
 // Blog Excerpt Length
 if ( ! function_exists( 'datarc_excerpt_length' ) ) {
 	function datarc_excerpt_length( $limit = 30 ) {
@@ -67,13 +61,15 @@ if ( ! function_exists( 'datarc_excerpt_length' ) ) {
 			$excerpt = implode( " ", $exc_slice );
 		}
 		
-		$excerpt = '<p>'.preg_replace('`\[[^\]]*\]`','',$excerpt).'</p>';
+		$excerpt = '<p>'.preg_replace('`\[[^\]]*\]`','',$excerpt ).'</p>';
 		return $excerpt;
 
 	}
 }
+
 // Comment number and Link
 if ( ! function_exists( 'datarc_posted_comments' ) ) :
+
     function datarc_posted_comments(){
         
         $comments_num = get_comments_number();
@@ -92,6 +88,7 @@ if ( ! function_exists( 'datarc_posted_comments' ) ) :
         
         return $comments;
     }
+
 endif;
 
 //audio format iframe match 
@@ -157,7 +154,7 @@ function datarc_theme_logo( $class = '' ) {
 		$siteLogo = '<h2><a class="'.esc_attr( $class ).'" href="'.esc_url( $siteUrl ).'">'.esc_html( get_bloginfo('name') ).'</a></h2>';
 	}
 	
-	return '<div class="logo">'.wp_kses_post( $siteLogo ).'</div>';
+	return '<div class="logo">'.$siteLogo.'</div>';
 	
 }
 
@@ -210,40 +207,6 @@ function datarc_get_textareahtml_output( $content ) {
 	return $content;
 }
 
-// 
-
-// Slider list ( Shortcode ) select Options
-function datarc_get_slider_shortcode_options( $field ) {
-    $args = $field->args( 'get_post_type' );
-	
-	
-    $args = is_array( $args ) ? $args : array();
-
-    $args = wp_parse_args( $args, array( 'post_type' => 'post' ) );
-
-    $postType = $args['post_type'];
-
-	//
-
-	$args = array(
-		'post_type'        => $postType,
-		'post_status'      => 'publish',
-	);
-
-	$posts_array = get_posts( $args );	
-
-	// Initate an empty array
-	$term_options = array();
-		
-		foreach( $posts_array as $post ){
-			
-			$term_options[ $post->post_name ] = $post->post_title;
-			
-		}
-	
-    return $term_options;
-
-}
 
 // html Style tag for background image use in datarc companion plugin
 function datarc_inline_bg_img( $bgUrl ){

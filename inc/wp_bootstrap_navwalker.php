@@ -439,8 +439,8 @@ class datarc_social_navwalker extends Walker_Nav_Menu {
 		}
 		
         $output .= sprintf( "\n<a href='%s' class='topbar-social-item fa %s'></a>\n",
-            $item->url,
-            $setClass
+            esc_url( $item->url ),
+            esc_attr( $setClass )
         );	
 			
     }

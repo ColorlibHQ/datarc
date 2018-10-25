@@ -24,7 +24,6 @@
 					get_template_part( 'templates/header', 'bottom' );
 				}
 				
-
 			}
 			
 		}
@@ -97,10 +96,8 @@
 	if( !function_exists('datarc_blog_col_start_cb') ){
 		function datarc_blog_col_start_cb(){
 			
-
 			$sidebarOpt = datarc_sidebar_opt();
 		
-				
 			//
 			if( !is_page() ){
 				$pullRight  = datarc_pull_right( $sidebarOpt , '3' );
@@ -134,6 +131,8 @@
 			if( has_post_thumbnail() ){
 						
 				if( !is_single() ){
+
+					$date_format = get_option('date_format');
 				
 					$html = '';
 
@@ -143,7 +142,7 @@
 							'url' => esc_url( get_the_post_thumbnail_url() )
 						)
 					);
-					$html .= '<span class="item-blog-date dis-block flex-c-m pos1 size17 bg4 s-text1">'.esc_html( get_the_date( 'M j, Y' ) ).'</span>';
+					$html .= '<span class="item-blog-date dis-block flex-c-m pos1 size17 bg4 s-text1">'.esc_html( get_the_date( $date_format ) ).'</span>';
 					$html .= '</a>';
 				
 				}else{
@@ -158,9 +157,9 @@
 					$html .= '</div>';
 
 				}
+
 				echo wp_kses_post( $html );
 				
-
 			}
 			// Thumbnail check and video and audio thumb show
 			if( !is_single() && !has_post_thumbnail() ){
@@ -212,7 +211,7 @@
 				// Post Date
 				if( get_the_author() ){
 					echo '<span>';
-						echo esc_html__( 'By ', 'datarc' ).'<a href="'.esc_url( get_author_posts_url( get_the_author_meta('ID') ) ).'">'.esc_html( get_the_author() ).'</a>';
+						echo esc_html__( 'By ', 'datarc' ).'<a href="'.esc_url( get_author_posts_url( absint( get_the_author_meta('ID') ) ) ).'">'.esc_html( get_the_author() ).'</a>';
 						echo wp_kses_post( $dividar );
 					echo '</span>';
 				}
@@ -231,7 +230,7 @@
 				if( is_array( $cats ) && count( $cats ) > 0 ){
 					
 					foreach( $cats as $cat ){
-					   $categories .= '<a href="'.esc_url( get_category_link( $cat->term_id ) ).'" class="category-link">'.esc_html( $cat->name ).'</a>';
+					   $categories .= '<a href="'.esc_url( get_category_link( absint( $cat->term_id ) ) ).'" class="category-link">'.esc_html( $cat->name ).'</a>';
 					}
 				}
 				
@@ -366,7 +365,6 @@
 			get_template_part( 'templates/404' );			
 		}
 	}
-
 
 
 ?>
