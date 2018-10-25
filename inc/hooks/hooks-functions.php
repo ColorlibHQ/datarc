@@ -33,22 +33,28 @@
 	if( !function_exists( 'datarc_footer_area' ) ){
 		function datarc_footer_area(){
 
+			$footerOpt = get_post_meta( absint( get_the_ID() ) ,'_datarc_footer_opt', true );
+
 			if( !is_404() ){
 
-				$widgetToggle = datarc_opt( 'datarc-widget-toggle-settings' );
+				if( $footerOpt != 'footerno' ){
 
-				$widgetClass = !$widgetToggle ? ' no-widgets' : '';
+					$widgetToggle = datarc_opt( 'datarc-widget-toggle-settings' );
 
-				echo '<footer class="section-full'.esc_attr( $widgetClass ).'"><div class="container">';
-				// Footer widget
-				if( $widgetToggle ){
-					get_template_part( 'templates/footer', 'widgets' );
+					$widgetClass = !$widgetToggle ? ' no-widgets' : '';
+
+					echo '<footer class="section-full'.esc_attr( $widgetClass ).'"><div class="container">';
+					// Footer widget
+					if( $widgetToggle ){
+						get_template_part( 'templates/footer', 'widgets' );
+					}
+					
+					// Footer bottom
+					get_template_part( 'templates/footer', 'bottom' );	
+
+					echo '</div></footer>';
+
 				}
-				
-				// Footer bottom
-				get_template_part( 'templates/footer', 'bottom' );	
-
-				echo '</div></footer>';
 				
 			}
 		}
