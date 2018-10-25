@@ -35,9 +35,14 @@
 		function datarc_footer_area(){
 
 			if( !is_404() ){
-				echo '<footer class="section-full"><div class="container">';
+
+				$widgetToggle = datarc_opt( 'datarc-widget-toggle-settings' );
+
+				$widgetClass = !$widgetToggle ? ' no-widgets' : '';
+
+				echo '<footer class="section-full'.esc_attr( $widgetClass ).'"><div class="container">';
 				// Footer widget
-				if( datarc_opt( 'datarc-widget-toggle-settings' ) ){
+				if( $widgetToggle ){
 					get_template_part( 'templates/footer', 'widgets' );
 				}
 				

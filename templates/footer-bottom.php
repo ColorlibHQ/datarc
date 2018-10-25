@@ -14,7 +14,7 @@ if( !defined( 'ABSPATH' ) ){
 
 ?>
 <div class="footer-bottom d-flex justify-content-between align-items-center">
-    <p class="footer-text m-0"><?php echo wp_kses_post( datarc_opt('datarc-copyright-text-settings') ); ?></p>
+    <p class="footer-text m-0"><?php echo wp_kses_post( datarc_opt( 'datarc-copyright-text-settings', __( 'Copyright © 2018 All rights reserved.', 'datarc' ) ) ); ?></p>
     <?php 
     // Social Media
     if( datarc_opt('datarc-footersocial-toggle-settings') ){
