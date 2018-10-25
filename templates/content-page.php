@@ -12,7 +12,7 @@ if( !defined( 'ABSPATH' ) ){
  */
 
 ?>
-<div id="page_<?php the_ID(); ?>" class="content--area">
+<div id="page_<?php the_ID(); ?>" <?php post_class( esc_attr( 'content--area' ) ); ?>>
 	<?php 
 
 	/**

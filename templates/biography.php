@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php 
 	// show avatar
 	$avatar = get_avatar( get_the_author_meta( 'ID' ),70 );
+	
 	if( $avatar  ){
 		echo wp_kses_post( $avatar );
 	}
