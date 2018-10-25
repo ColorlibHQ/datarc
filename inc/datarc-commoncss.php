@@ -51,6 +51,7 @@ function datarc_common_custom_css(){
 			.details-btn:hover,
 			.primary-btn:hover,
 			.default-header nav .main-menu .nav-item.submenu ul .nav-item:hover .nav-link,
+			.active-testimonial-carousel .owl-dots .owl-dot.active,
 			.block2-img span.onsale,
 			.woocommerce span.onsale,
 			.swal-button:active,
