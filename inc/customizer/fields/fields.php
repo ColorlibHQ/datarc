@@ -269,17 +269,7 @@ Epsilon_Customizer::add_field(
         'default'     => false,
     )
 );
-// Footer widget toggle field
-Epsilon_Customizer::add_field(
-    'datarc-footersocial-toggle-settings',
-    array(
-        'type'        => 'epsilon-toggle',
-        'label'       => esc_html__( 'Toggle Footer Social', 'datarc' ),
-        'description' => esc_html__( 'Toggle the footer social icon active.', 'datarc' ),
-        'section'     => 'datarc_footer_options_section',
-        'default'     => false,
-    )
-);
+
 // Footer copyright text field
 Epsilon_Customizer::add_field(
     'datarc-copyright-text-settings',
