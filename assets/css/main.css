@@ -2050,7 +2050,9 @@ span.post-cat {
     width: 100%;
     height: 100%;
 }
-
+.header_titletag{
+  color: #fff
+}
 
 .default-header nav .main-menu .nav-item.submenu {
       position: relative; }
@@ -2137,3 +2139,4 @@ span.post-cat {
       .sub_menu.dropdown-menu li a {
         color: #222;
       }
+

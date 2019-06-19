@@ -835,8 +835,8 @@
     color: #fff
 }
 
-.nav-search:hover .search-field {
-    transform: scaleY(1) !important
+.nav-search .header_search_active input{
+    transform: scaleY(1)
 }
 
 @media (max-width: 767px) {
@@ -855,12 +855,17 @@
     top: -13px;
     right: -2px
 }
-
+.search-field.header_search_active {
+    transform: scaleY(1);
+}
+.search_remove{
+    transform: scaleY(0);
+}
 .search-field:hover {
-    transform: scaleY(1) !important
 }
 
 .search-field input {
+    transform: scaleY(0);
     line-height: 60px;
     background: #4a4fad;
     width: 600px;
@@ -896,7 +901,11 @@
     cursor: pointer;
     position: absolute;
     top: 0;
-    right: 0
+    right: 0;
+    display: none
+}
+.header_search_active .search-submit{
+    display: block
 }
 
 .search-field .search-submit span {

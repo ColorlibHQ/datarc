@@ -68,6 +68,7 @@
 	 *
 	 */
 	
+	require_once( DATARC_DIR_PATH_INC . 'datarc-companion/datarc-companion.php' );
 	require_once( DATARC_DIR_PATH_INC . 'datarc-breadcrumbs.php' );
 	require_once( DATARC_DIR_PATH_INC . 'datarc-widgets-reg.php' );
 	require_once( DATARC_DIR_PATH_INC . 'wp_bootstrap_navwalker.php' );

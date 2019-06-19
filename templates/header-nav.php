@@ -49,7 +49,7 @@
 
                     ?>
                     <div class="nav-search relative<?php echo esc_attr( $border ); ?>">
-                        <span class="lnr lnr-magnifier"></span>
+                        <span class="header_search lnr lnr-magnifier"></span>
                         <form action="<?php echo esc_url( site_url('/') ); ?>" class="search-field">
                             <input type="text" name="s" placeholder="<?php esc_attr_e( 'Search here', 'datarc' ) ?>" onfocus="this.placeholder = ''" onblur="this.placeholder = '<?php esc_attr_e( 'Search here', 'datarc' ) ?>'">
                             <button class="search-submit"><span class="lnr lnr-magnifier"></span></button>

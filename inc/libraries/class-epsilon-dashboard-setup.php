@@ -241,10 +241,6 @@ class Epsilon_Dashboard_Setup {
 				'integration' => true,
 				'recommended' => false,
 			),
-			'datarc-companion' => array(
-				'integration' => true,
-				'recommended' => false,
-			),
 			'elementor' => array(
 				'integration' => true,
 				'recommended' => false,
@@ -266,7 +262,6 @@ class Epsilon_Dashboard_Setup {
 
 		if ( ! $integrated ) {
 			unset( $arr['contact-form-7'] );
-			unset( $arr['datarc-companion'] );
 			unset( $arr['elementor'] );
 			unset( $arr['one-click-demo-import'] );
 		}
@@ -296,21 +291,6 @@ class Epsilon_Dashboard_Setup {
 						'label'   => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'installed', 'Contact Form 7', 'verify_cf7' ) ? __( 'Activate Plugin', 'datarc' ) : __( 'Install Plugin', 'datarc' ),
 						'type'    => 'handle-plugin',
 						'handler' => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'installed', 'Contact Form 7', 'verify_cf7' ),
-					),
-				),
-			),
-			array(
-				'id'          => 'datarc-check-cm',
-				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'datarc-companion', 'title', 'Datarc Companion' ),
-				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'datarc-companion', 'description', 'Datarc Companion' ),
-				'plugin_slug' => 'datarc-companion',
-				'state'       => false,
-				'check'       => defined( 'DATARC_COMPANION_VERSION' ),
-				'actions'     => array(
-					array(
-						'label'   => Epsilon_Init_Notify_System::plugin_verifier( 'datarc-companion', 'installed', 'Datarc Companion' ) ? __( 'Activate Plugin', 'datarc' ) : __( 'Install Plugin', 'datarc' ),
-						'type'    => 'handle-plugin',
-						'handler' => Epsilon_Init_Notify_System::plugin_verifier( 'datarc-companion', 'installed', 'Datarc Companion' ),
 					),
 				),
 			),
@@ -369,13 +349,6 @@ class Epsilon_Dashboard_Setup {
 				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'description', 'Contact Form 7', 'verify_cf7' ),
 				'plugin_slug' => 'contact-form-7',
 				'check'       => defined( 'WPCF7_VERSION' ),
-			),
-			array(
-				'id'          => 'datarc-check-cm',
-				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'datarc-companion', 'title', 'Datarc Companion' ),
-				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'datarc-companion', 'description', 'Datarc Companion' ),
-				'plugin_slug' => 'datarc-companion',
-				'check'       => defined( 'DATARC_COMPANION_VERSION' ),
 			),
 			array(
 				'id'          => 'datarc-check-elementor',

@@ -22,3 +22,6 @@
 .epsilon-dashboard-container--tabs nav a {
     background-color: #fff;
 }
+ .dashicons-admin-tools:before{
+    content: "\f102";
+  }

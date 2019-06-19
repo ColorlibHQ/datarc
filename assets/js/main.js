@@ -115,4 +115,28 @@
         };
 
 
+
+
+        var box = document.querySelector(".search-field");
+          
+        // Detect all clicks on the document
+        document.addEventListener("click", function(event) {
+          // If user clicks inside the element, do nothing
+          var clList = event.target.classList;
+
+          if (event.target.closest(".header_search")){
+            box.classList.add('header_search_active');  
+            box.classList.remove('search_remove');  
+          }else if( clList != '' ){
+            box.classList.add('search_remove');
+            box.classList.remove('header_search_active');
+          }
+          return;
+
+
+        });
+          
+
+
+
 })(jQuery);

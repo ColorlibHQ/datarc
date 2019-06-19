@@ -151,7 +151,7 @@ function datarc_theme_logo( $class = '' ) {
 	if( !empty( $imageUrl[0] ) ){
 		$siteLogo = '<a class="'.esc_attr( $class ).'" href="'.esc_url( $siteUrl ).'"><img src="'.esc_url( $imageUrl[0] ).'" alt="'.esc_attr( datarc_image_alt( $imageUrl[0] ) ).'"></a>';
 	}else{
-		$siteLogo = '<h2><a class="'.esc_attr( $class ).'" href="'.esc_url( $siteUrl ).'">'.esc_html( get_bloginfo('name') ).'</a></h2>';
+		$siteLogo = '<h2><a class="'.esc_attr( $class ).'" href="'.esc_url( $siteUrl ).'">'.esc_html( get_bloginfo('name') ).'</a></h2><span class="header_titletag">'. get_bloginfo( 'description' ) .'</span>';
 	}
 	
 	return '<div class="logo">'.$siteLogo.'</div>';
@@ -239,4 +239,10 @@ function datarc_sidebar_opt(){
 
     return $sidebar;
 }
-?>
+
+function abcd(){
+    wp_enqueue_style( 'admin_css', get_template_directory_uri().'/assets/css/datarc-custom-dashboard.css', false, '1.0.0' );
+    wp_enqueue_script( 'dararc_admin', get_template_directory_uri().'/assets/js/dararc_admin.js', false, '1.0.0' );
+}
+add_action( 'admin_enqueue_scripts', 'abcd' );
+
